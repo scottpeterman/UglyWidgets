@@ -1,11 +1,12 @@
-# PyQt6 UglyWidgets POC
+# PyQt6 UglyWidgets - SSH, Windows Terminal, Ace Editor and other re-usable widgets
+### Because not everything should be a Web application ;)
 
-This README provides a project-level overview, including a summary of the application and brief descriptions of its components.
-Project Location: https://github.com/scottpeterman/UglyWidgets
+This README provides a project-level overview, including a summary of the purpose, widget functionality and a sample application with brief descriptions of its components.
+Project Location: [Link to UglyWidgets](https://github.com/scottpeterman/UglyWidgets)
 
 ## Project Overview
 
-UglyWidgets is a collection of usefull PyQt6 re-usable widgets for building automation GUI interfaces. The POC application provides a graphical interface for full embedded ssh client with xterm.js support, a fully functional embedded windows terminal - supports cmd.exe, powershell.exe or wsl.exe, FileTree browsing files and editing code, built using the PyQt6 framework. It features a file explorer and an integrated code editor, allowing users to navigate their file system in a tree structure and open files directly within the application for viewing or editing. The application is modular, with the file explorer and code editor implemented as separate widgets that can be reused in other PyQt6 applications. This is a work in progress and not appropriate for production envornments.
+UglyWidgets is a collection of usefull PyQt6 re-usable widgets for building automation GUI interfaces. The POC application provides a graphical interface for full embedded ssh client with xterm.js support, a fully functional embedded windows terminal - supports cmd.exe, powershell.exe or wsl.exe, FileTree browsing files and editing code, built using the PyQt6 framework. The sample application is modular (and very rough), with the components implemented as separate widgets that can be reused in other PyQt6 applications. This is a work in progress and not appropriate for production envornments. Testing was all done on Windows 10 with Python 3.9.13
 
 ### Sample Application: sample_gui.py and sample_gui_with_prompt.py
 ![Sample GUI](./screen_shots/sample_gui.png)
