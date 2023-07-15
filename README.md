@@ -72,3 +72,6 @@ For more detailed information about each of these components, refer to their res
 - [README_qtwincon_widget.md](./readme_qtwincon_widget.md)
 - [README_qtace_widget.md](./readme_qtace_widget.md)
 - [README_qtexplorer.md](./readme_qtexplorer.md)
+
+
+<meta name="google-site-verification" content="6qF6kKBZ6q4VItmtN-B12aiyN4HP5tyAsYpP7VXyHi4" />
