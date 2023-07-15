@@ -5,7 +5,7 @@ Project Location: https://github.com/scottpeterman/UglyWidgets
 
 ## Project Overview
 
-UglyWidgets is a collection of usefull PyQt6 re-usable widgets for building automation GUI interfaces. The POC application provides a graphical interface for browsing files and editing code, built using the PyQt6 framework. It features a file explorer and an integrated code editor, allowing users to navigate their file system in a tree structure and open files directly within the application for viewing or editing. The application is modular, with the file explorer and code editor implemented as separate widgets that can be reused in other PyQt6 applications. 
+UglyWidgets is a collection of usefull PyQt6 re-usable widgets for building automation GUI interfaces. The POC application provides a graphical interface for full embedded ssh client with xterm.js support, a fully functional embedded windows terminal - supports cmd.exe, powershell.exe or wsl.exe, FileTree browsing files and editing code, built using the PyQt6 framework. It features a file explorer and an integrated code editor, allowing users to navigate their file system in a tree structure and open files directly within the application for viewing or editing. The application is modular, with the file explorer and code editor implemented as separate widgets that can be reused in other PyQt6 applications. This is a work in progress and not appropriate for production envornments.
 
 ### Sample Application: sample_gui.py and sample_gui_with_prompt.py
 ![Sample GUI](./screen_shots/sample_gui.png)
