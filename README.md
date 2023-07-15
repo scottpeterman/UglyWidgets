@@ -7,6 +7,12 @@ Project Location: https://github.com/scottpeterman/UglyWidgets
 
 UglyWidgets is a collection of usefull PyQt6 re-usable widgets for building automation GUI interfaces. The POC application provides a graphical interface for browsing files and editing code, built using the PyQt6 framework. It features a file explorer and an integrated code editor, allowing users to navigate their file system in a tree structure and open files directly within the application for viewing or editing. The application is modular, with the file explorer and code editor implemented as separate widgets that can be reused in other PyQt6 applications. 
 
+### Sample Application: sample_gui.py and sample_gui_with_prompt.py
+![Sample GUI](./screen_shots/sample_gui.png)
+
+### Widgets in stand-alone mode:
+![Widgets](./screen_shots/widgets.png)
+
 ## Project Components
 
 The project is composed of several PyQt6 Widgets, each providing specific functionality. Here's a list of the main components:
@@ -59,12 +65,6 @@ Winpty is a Windows software package providing an interface similar to a Unix pt
 
 Paramiko is a Python library that implements the SSHv2 protocol for secure (encrypted and authenticated) connections to remote machines. It provides functionalities to create new sessions, execute commands, and transfer files over SSH. In this project, Paramiko is used to establish and manage SSH connections from the Python application to a remote server.
 
-Sample Application: sample_gui.py and sample_gui_with_prompt.py
-![Sample GUI](./screen_shots/sample_gui.png)
-
-
-
-![Widgets](./screen_shots/widgets.png)
 
 ## Additional Resources
 
