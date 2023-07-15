@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Editor</title>
+  <style type="text/css" media="screen">
+    body {
+        overflow: hidden;
+    }
+
+    #editor {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+<div id="editor">
+</div>
+
+<script src="./src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="./editor_custom.js" type="text/javascript" charset="utf-8"></script>
+<script src="qrc:///qtwebchannel/qwebchannel.js"></script>
+<script>
+// Declare global variable
+var channel;
+var handler;
+
+// Function to initialize QWebChannel
+function initializeQWebChannel(callback) {
+    channel = new QWebChannel(qt.webChannelTransport, function (initializedChannel) {
+        handler = initializedChannel.objects.handler;
+        if (typeof handler == 'undefined') {
+            console.log('Handler not found');
+        } else {
+            console.log('Handler attached:', handler);
+            if (typeof callback === 'function') {
+                callback(handler);
+            }
+        }
+    });
+}
+
+// Function to call Python handler
+function callPythonHandler() {
+    if (!handler) {
+        console.log('Handler not initialized');
+        return;
+    }
+
+    console.log('initialized javascript to python handler');
+<!--    handler.callFromJs('Initialize Event from JavaScript!');-->
+}
+
+// Usage:
+initializeQWebChannel(function() {
+    callPythonHandler();
+});
+
+
+
+</script>
+</body>
+</html>
