@@ -68,5 +68,7 @@ The project is composed of several PyQt6 Widgets, each providing specific functi
 
 For more detailed information about each of these components, refer to their respective README files:
 
+- [README_qtssh.md](./README_qtssh_widget.md)
+- [README_qtwincon_widget.md](./README_qtwincon_widget.md)
 - [README_qtace_widget.md](./README_qtace_widget.md)
 - [README_qtexplorer.md](./README_qtexplorer.md)
