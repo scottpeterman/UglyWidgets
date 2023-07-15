@@ -1,10 +1,26 @@
 # PyQt6 UglyWidgets POC
 
 This README provides a project-level overview, including a summary of the application and brief descriptions of its components.
+Project Location: https://github.com/scottpeterman/UglyWidgets
 
 ## Project Overview
 
-This POC application provides a graphical interface for browsing files and editing code, built using the PyQt6 framework. It features a file explorer and an integrated code editor, allowing users to navigate their file system in a tree structure and open files directly within the application for viewing or editing. The application is modular, with the file explorer and code editor implemented as separate widgets that can be reused in other PyQt6 applications.
+UglyWidgets is a collection of usefull PyQt6 re-usable widgets for building automation GUI interfaces. The POC application provides a graphical interface for browsing files and editing code, built using the PyQt6 framework. It features a file explorer and an integrated code editor, allowing users to navigate their file system in a tree structure and open files directly within the application for viewing or editing. The application is modular, with the file explorer and code editor implemented as separate widgets that can be reused in other PyQt6 applications. 
+
+## Project Components
+
+The project is composed of several PyQt6 Widgets, each providing specific functionality. Here's a list of the main components:
+
+- `sample_gui.py`: This is a widget that brings together the SSH Widget, Windows Terminal, file explorer and code editor widgets to form the complete application. It initially presents the file explorer and opens files in the code editor widget when they're double-clicked in the file explorer.
+
+- `qtssh_widget.py`: The PyQt6 SSH Terminal Widget provides an SSH terminal interface within a PyQt6 application. It allows users to connect to a remote machine using SSH credentials (IP address, username, and password). Once connected, users can execute commands on the remote machine directly from this widget.
+
+- `qtwincon_widget.py`: The PyQt6 Windows Terminal Widget provides a terminal interface within a PyQt6 application that can interact with different shells such as cmd, PowerShell, or Windows Subsystem for Linux (WSL2). Users can execute shell commands directly from this widget.
+
+- `qtace_widget.py`: This script defines the `QtAceWidget` class, a widget that provides a code editor interface. The code editor is an implementation of the Ace code editor and allows for viewing and editing files directly within the application.
+
+- `qtexplorer.py`: This script defines the `FileTree` class, a widget that provides a tree-based file explorer interface. The file explorer allows users to navigate their file system in a tree structure, with folders and files represented as tree items.
+
 
 ## Use of Xterm.js and PyQt6 Webengine
 ## xterm.js Overview
@@ -43,24 +59,10 @@ Winpty is a Windows software package providing an interface similar to a Unix pt
 
 Paramiko is a Python library that implements the SSHv2 protocol for secure (encrypted and authenticated) connections to remote machines. It provides functionalities to create new sessions, execute commands, and transfer files over SSH. In this project, Paramiko is used to establish and manage SSH connections from the Python application to a remote server.
 
-
+Sample Application: sample_gui.py and sample_gui_with_prompt.py
 ![Sample GUI](./screen_shots/sample_gui.png)
 
-## Project Components
 
-The project is composed of several PyQt6 Widgets, each providing specific functionality. Here's a list of the main components:
-
-- `sample_gui.py`: This is a widget that brings together the SSH Widget, Windows Terminal, file explorer and code editor widgets to form the complete application. It initially presents the file explorer and opens files in the code editor widget when they're double-clicked in the file explorer.
-
-- `qtssh_widget.py`: The PyQt6 SSH Terminal Widget provides an SSH terminal interface within a PyQt6 application. It allows users to connect to a remote machine using SSH credentials (IP address, username, and password). Once connected, users can execute commands on the remote machine directly from this widget.
-
-- `qtwincon_widget.py`: The PyQt6 Windows Terminal Widget provides a terminal interface within a PyQt6 application that can interact with different shells such as cmd, PowerShell, or Windows Subsystem for Linux (WSL2). Users can execute shell commands directly from this widget.
-
-- `qtace_widget.py`: This script defines the `QtAceWidget` class, a widget that provides a code editor interface. The code editor is an implementation of the Ace code editor and allows for viewing and editing files directly within the application.
-
-- `qtexplorer.py`: This script defines the `FileTree` class, a widget that provides a tree-based file explorer interface. The file explorer allows users to navigate their file system in a tree structure, with folders and files represented as tree items.
-
-- `editor`: This is a module that provides the implementation of the Ace code editor used in the `QtAceWidget` class. It should include methods to handle the loading, displaying, and saving of file content.
 
 ![Widgets](./screen_shots/widgets.png)
 
