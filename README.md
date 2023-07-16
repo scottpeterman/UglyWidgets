@@ -18,7 +18,7 @@ UglyWidgets is a collection of usefull PyQt6 re-usable widgets for building auto
 
 The project is composed of several PyQt6 Widgets, each providing specific functionality. Here's a list of the main components:
 
-- `sample_gui.py`: This is a widget that brings together the SSH Widget, Windows Terminal, file explorer and code editor widgets to form the complete application. It initially presents the file explorer and opens files in the code editor widget when they're double-clicked in the file explorer.
+- `sample_gui.py`: This is an example application main windows that brings together the SSH Widget, Windows Terminal, file explorer and code editor widgets to form the complete application. It initially presents the file explorer and opens files in the code editor widget when they're double-clicked in the file explorer.
 
 - `qtssh_widget.py`: The PyQt6 SSH Terminal Widget provides an SSH terminal interface within a PyQt6 application. It allows users to connect to a remote machine using SSH credentials (IP address, username, and password). Once connected, users can execute commands on the remote machine directly from this widget.
 
