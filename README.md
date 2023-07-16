@@ -58,6 +58,9 @@ This two-way communication is crucial in our project as it allows xterm.js, runn
 
 By using these components together, PyQt6 provides a robust way of integrating complex web content and allowing intricate interactions between the PyQt6 application and the embedded web view.
 
+### How its used in qtssh_widget.py
+![Keystroke_flow](./screen_shots/sshwidget_keystroke_flow_bidi.png)
+
 ## Winpty
 
 Winpty is a Windows software package providing an interface similar to a Unix pty-master for communicating with Windows console programs. The package includes a Cygwin-compatible library and utility programs. In the context of this project, winpty provides a way to handle the terminal's input and output on Windows.
