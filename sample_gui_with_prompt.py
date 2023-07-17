@@ -97,8 +97,8 @@ class Ui_NESTMainWindow(object):
         self.verticalLayout_8.setObjectName("verticalLayout_8")
 
         self.Browser = ImageWidget()
-        self.Browser.set_image_file("sample_map.jpg")
-        # self.Browser.set_image_file("sample_map.png")
+        # self.Browser.set_image_file("sample_map.jpg")
+        self.Browser.set_image_file("sample_map.png")
         self.Browser.set_size(400, 200)
         self.Browser.setObjectName("Browser")
         self.verticalLayout_8.addWidget(self.Browser)
